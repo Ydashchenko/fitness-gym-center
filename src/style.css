@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    background: url('./images/main-background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding: 40px;
+}
+
+#content {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid greenyellow 2px;
+    padding-bottom: 30px;
+}
+
+header button {
+    background-color: inherit;
+    border: 0;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+header button:hover {
+    transform: scale(1.2);
+}
+
+.search-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.main-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn span {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: greenyellow;
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: greenyellow;
+}
+
+.active {
+    color: greenyellow;
+    border-bottom: grey solid 3px;
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#home-tab {
+    display: flex;
+    align-items: center;
+}
+
+aside button {
+    color: black;
+    background-color: greenyellow;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
+    padding: 10px;
+    font-size: 1.5rem;
+    max-width: 200px;
+    transition: 0.3s;
+}
+
+aside p {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+aside button:hover {
+    color: greenyellow;
+    background-color: inherit;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+}
+
+.left-aside {
+    align-items: start;
+}
+
+.right-aside {
+    align-items: end;
+}
+
+.right-aside *{
+    text-align: end;
+}
+
+@media (max-width: 900px) {
+    .center-element {
+        order: -1;
+    }
+
+    #home-tab {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .left-aside {
+        align-items: center;
+    }
+    
+    .right-aside {
+        align-items: center;
+    }
+
+    .left-aside *{
+        text-align: center;
+    }
+    
+    .right-aside *{
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    #location-btn,
+    #about-us-btn,
+    #contact-btn,
+    #home-btn {
+        display: none;
+    }
+
+    body {
+        padding: 40px 10px;
+    }
+
+    .bodybuilder {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
